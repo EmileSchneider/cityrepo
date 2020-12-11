@@ -1,0 +1,36 @@
+<template>
+<div class="CV">
+  <b-container>
+    <h1>CV</h1>
+    <b-row v-for="w in work">
+      <b-col></b-col>
+      <b-col>
+	{{ w.name }}
+	<work v-bind="w" duration="" description="w.description"></work>
+      </b-col>
+      <b-col>
+      </b-col>
+    </b-row>
+  </b-container>
+  </div>
+</template>
+<script>
+  import Work from './Work.vue';
+export default {
+    components: {
+	"work": Work
+	},
+  name: 'CV',
+  data: function() {
+      return {
+	  work: [
+	      {
+		  name: "somwherehre",
+		  duration: "12-3-2452:2-7-2565",
+		  description: "did stuff with stuff to achieve goal"
+	      }
+	  ]
+      }
+  }
+}
+</script>

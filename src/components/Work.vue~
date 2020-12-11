@@ -1,0 +1,19 @@
+<template>
+  <div class="Work">
+    <h1>{{ employer }}</h1>
+    <h2>{{ duration }}</h2>
+    <p>{{ description }}</p>
+  </div>
+</template>
+<script>
+  export default {
+  name: 'Work',
+  props: [
+  'employer',
+  'duration',
+  'description'],
+  data: function(){
+  return{}
+  }
+  }
+<script>
